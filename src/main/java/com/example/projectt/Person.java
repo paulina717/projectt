@@ -5,6 +5,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private int age;
+    private String city;
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
@@ -15,6 +16,13 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+    }
+
+    public Person(String firstName, String lastName, int age, String city) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.city = city;
     }
 
     public String getFirstName() {
@@ -39,5 +47,13 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }
