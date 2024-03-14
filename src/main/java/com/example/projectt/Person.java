@@ -24,6 +24,10 @@ public class Person {
         this.age = age;
         this.city = city;
     }
+    
+    public void hello() {
+        System.out.println("Hello!");
+    }
 
     public String getFirstName() {
         return firstName;
